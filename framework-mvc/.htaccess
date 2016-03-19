@@ -1,0 +1,7 @@
+ErrorDocument 404 /python/e.py?error=404
+ErrorDocument 403 /python/e.py?error=403
+#ErrorDocument 500 /python/e.py?error=500
+
+RewriteEngine on
+#RewriteRule ^([a-zA-Z0-9\-_/]*)$ index.py?cmd=$1
+RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.py?cmd=$1
